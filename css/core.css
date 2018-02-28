@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "BukyVede";
+  src: url("/fonts/BukyVede-Regular.ttf") format("ttf"),
+       url("/fonts/BukyVede-Regular.otf") format("otf"),
+       url("/fonts/BukyVede-Regular.woff") format("woff");
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font: 14pt "BukyVede", serif;
+  color: #000;
+  background: #ccc;
+}
+
+body.ostriv-dark {
+  color: #fff;
+  background: #111;
+}
+
+body.ostriv-dark * {
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+  line-height: 150%;
+}
+
+a {
+  color: #fff;
+}
+
+/* Header */
+.header {
+  background: url('/img/header-bg.jpg');
+  padding: 0 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+.header__logo {
+  position: relative;
+  top: 7px;
+}
+
+
+/* Header Nav */
+.nav__link {
+  text-decoration: none;
+  font-size: 16pt;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  padding: 0 32px;
+  display: inline-block;
+  text-shadow: none;
+}
+
+.nav__link:first-letter {
+  color: #900;
+}
+
+.nav__link:hover:first-letter {
+  color: #600;
+}
+
+.nav .nav__link:first-child {
+  padding-left: 0;
+}
+
+/* footer */
+.footer-disclaimer {
+  padding: 32pt 10pt;
+  font-weight: bold;
+}
+
+/* Langs  */
+.lang__selector {
+  background: url('/img/lang.png');
+  width: 30px;
+  height: 20px;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lang__selector--en {
+  background-position: -2px 65px;
+}
+
+/* Typograhics */
+h1, h2, h3 {
+  color: #dba940;
+}
+
+h1 {
+  font-size: 22pt;
+}
+
+/* Utils */
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-md {
+  font-size: 18pt;
+}
+
+/* Containers */
+.text-container {
+  display: table;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 32px 15px;
+}

@@ -1,0 +1,118 @@
+/* Jumbotron */
+.jumbotron {
+    height: 80vh;
+    min-height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.jumbotron__wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+
+.jumbotron__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.jumbotron__body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 400px #000000;
+    flex-direction: column;
+    color: #fff;
+}
+
+/* Social */
+.socials {
+    position: relative;
+    padding: 32px 0;
+    display: inline-block;
+    width: auto;
+}
+
+
+.socials .social {
+    margin: 0 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.socials__ribbon {
+    height: 0;
+    width: 120%;
+    border: 8px solid #600;
+    box-sizing: border-box;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.socials__ribbon:before {
+    content: '';
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    border-left-color: #ccc;
+    position: absolute;
+    left: -9px;
+    top: -8px;
+}
+
+.socials__ribbon:after {
+    content: '';
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    border-right-color: #ccc;
+    position: absolute;
+    right: -9px;
+    top: -8px;
+}
+
+.social {
+    background-image: url("/img/social.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.social:hover {
+    transform: scale(1.1);
+}
+
+.social__facebook {
+    width: 64px;
+    height: 64px;
+    background-position: -5px -5px;
+}
+
+.social__reddit {
+    width: 64px;
+    height: 64px;
+    background-position: -79px -5px;
+}
+
+.social__rss {
+    width: 64px;
+    height: 64px;
+    background-position: -5px -79px;
+}
+
+.social__twitter {
+    width: 64px;
+    height: 64px;
+    background-position: -79px -79px;
+}
